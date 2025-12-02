@@ -37,19 +37,16 @@ async def on_ready():
 # ================================
 @bot.command(name="ping")
 async def ping(ctx: commands.Context):
-    """Botun çalıştığını test etmek için basit komut."""
     await ctx.send("Pong! 🏓")
 
 
 @bot.command(name="yardim")
 async def yardim(ctx: commands.Context):
-    """Kullanılabilir temel komutları gösterir."""
     mesaj = (
         "**🤖 Yapay Zeka Botu (Adım 1 – Temel İskelet)**\n\n"
         "`!ping`  → Botun çalışıp çalışmadığını kontrol eder.\n"
-        "`!yardim` → Bu mesajı gösterir.\n\n"
-        "Şu an sadece temel iskelet aktif. Bir sonraki adımda yapay zeka eklenecek. "
-        "Her yeni sürüm, önceki özellikleri **kaybetmeyecek**."
+        "`!yardim` → Bu mesajı gösterir.\n"
+        "\nBir sonraki adımda yapay zeka eklenecek."
     )
     await ctx.send(mesaj)
 
